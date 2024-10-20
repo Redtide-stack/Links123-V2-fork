@@ -1,10 +1,86 @@
-<html><head><style>
-  
-  </style>
+<html><head>
 
   </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif;">Welcome to Links123</h1>
-  <h3 style="text-align: center;">shikanoko nokonoko koshitantan</h3>
-  <h3 style="text-align: center;font: 59px Tahoma, sans-serif;"></h3>
+  <style>
+    #randomPhrase {
+      position: absolute;
+      bottom: px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <div id="randomPhrase"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // some random text when u open the site 
+    var phrases = [
+    "shikanoko nokonoko koshitantan",
+    "I am Steve",
+    "Miaw miaw miaw miaaaaaaaaawe",
+    "GET OUT",
+    "Kulikitakatí, kulikitakatá",
+    "Ring ding ding daa baa",
+    "Put the phone down",
+    "This is a crafting table",
+    "Melody",
+    "",                                                                     
+    "Quiero dinero",
+    "donate me",
+    "Muy dificil",
+	"Edicion en Español",
+    "Boo",
+    "hjbhfejcdnehfjkmdsnjhefkd",
+    "Bienvenido a Links123",
+	"Dame dinero",
+	"Free Editon",
+	"Pocket Edition",
+    "Bedrock Edition",
+    "Java Edition",
+	"Otro dia",
+	"New games..?",
+    "Do not share",
+    "123", 
+    "Rule34 is now unblocked",
+    "The best page created by me",
+	"Money",
+    "The definitive edition",
+    "More than 50 games",
+    "Unblocked Games",
+    "Luis123",
+	"SuperRicardo64",
+    "The best games",
+    "Page created by SUPERBRUCE12",
+	"HTML:cafe is better than Google Docs Edition",
+    "Links123: Google Docs & HTML.cafe Edition",
+	"It's time to touch Angelo",
+	"Created by RMS123",
+	"Donde esta mr marmur?",
+    "Dinero",
+    "blablablablaableblebleblee",
+    "HTML.cafe Edition",
+	"Donde esta mi dinero?",
+	"Brawl Stars",
+	"Ñ",
+    "Also try Links123: Google Docs Edition",
+	"Todo tu culpa Alex",
+	"Negros",
+      ];
+
+      var randomIndex = Math.floor(Math.random() * phrases.length);
+      var randomPhrase = phrases[randomIndex];
+
+      var phraseElement = document.getElementById("randomPhrase");
+      phraseElement.textContent = randomPhrase;
+    });
+  </script>
+
+
+
+  <h3 style="text-align: center;font: 90px Tahoma, sans-serif;"></h3>
   <h3 style="text-align: left; font: 20px T, sans;" >Games, Emulators and Pages</h3>
  <style>
         button {
@@ -373,10 +449,5 @@ iframe.style.margin = '0';
 iframe.src = url;
 win.document.body.appendChild(iframe);
 }
-	</script>
-
-
-
-
 
    </body></html>
