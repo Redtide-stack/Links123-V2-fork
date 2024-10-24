@@ -1,0 +1,112 @@
+﻿<html><head><style>
+  
+  </style>
+
+
+  </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif;">Pages</h1>
+   <style>
+    #randomPhrase {
+      position: absolute;
+      bottom: px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <div id="randomPhrase"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // some random text when u open the site 
+    var phrases = [
+    "This is very empty",
+    "Everyone uses Art Class",
+    "Nobody uses Internet Archive",
+    "123Movies is not created by me",
+    "Lo mejor del El Chavo is no longer in the VIDEOS section",
+    "",
+    "I have no more texts to show here",
+    
+    
+      ];
+
+
+      var randomIndex = Math.floor(Math.random() * phrases.length);
+      var randomPhrase = phrases[randomIndex];
+
+
+      var phraseElement = document.getElementById("randomPhrase");
+      phraseElement.textContent = randomPhrase;
+    });
+  </script>
+  <h3 style="text-align: center;font: 115px Tahoma, sans-serif;"></h3>
+ <style>
+        button {
+            padding: 12px 10px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        button:active {
+            background-color: #004494;
+            transform: translateY(0);
+        }
+ </style>
+  <button onclick="openGame(0)">Internet Archive</button>
+  <button onclick="openGame(1)">123Movies</button>
+  <button onclick="openGame(2)">Art Class</button>
+  <button onclick="openGame(3)">Lo mejor del Chavo del 8</button>
+
+
+        <script>
+                function openGame(link) {
+      switch(link) {
+      case 0:
+      url = "https://html.cafe/x04a5dfac";
+      break;
+
+
+      case 1:
+      url = "https://html.cafe/x7e267ae9";
+      break;
+
+
+      case 2:
+      url = "https://html.cafe/x1b93b7ce";
+      break;
+
+
+      case 3:
+      url = "https://html.cafe/x733d2e3d";
+      break;
+
+
+
+
+      }
+      
+var win = window.open();
+
+
+var iframe = win.document.createElement('iframe');
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+win.document.body.style.margin = '0';
+win.document.body.style.height = '100vh';
+iframe.style.margin = '0';
+iframe.src = url;
+win.document.body.appendChild(iframe);
+}
+        </script>
+   </body></html>

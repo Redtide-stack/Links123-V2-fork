@@ -1,0 +1,515 @@
+﻿<html><head><style>
+  
+  </style>
+
+
+  </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif;">Games</h1>
+   <style>
+    #randomPhrase {
+      position: absolute;
+      bottom: px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <div id="randomPhrase"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // some random text when u open the site 
+    var phrases = [
+    "Also try Pixel",
+    "Also try Retro Bowl",
+    "Also try Sonic Robot Blast 2",
+    "Also try Super Mario 64",
+    "Also try Eggy Car",
+    "Also try Slope",
+    "Also try Snowball.io",
+    "Also try Paper.io 2",
+    "Also try Pizza tower",
+    "Also try Final Earth 2",
+    "Also try Tiny Fishing",
+    "Also try OvO",
+    "Also try Moto X3M",
+    "Also try Subway Surfers",
+    "Also try Time Shooter 3",
+    "Also try Sonic 3 AIR",
+    "Also try Sonic 4 Episode 1",
+    "Also try Minecraft 1.8",
+    "Also try Project Lazer",
+    "Also try Stock Trading Game",
+    "Also try Sonic Mania Plus",
+    "Also try Super Smash Flash 2",
+    "Also try RedBall4",
+    "Also try Fleeing the Complex",
+    "Also try Sonic Worlds Next Eng",
+    "Also try Fruit Slices",
+    "Also try Bloxorz",
+    "Also try Super Mario Bros",
+    "Also try Unfair Undyne",
+    "Also try Super Mario 63",
+    "Also try Cat Mario",
+    "Also try Cut the Rope",
+    "Also try Plants vs Zombies",
+    "Also try TrollFace Quest",
+    "Also try Nyan Cat",
+    "Also try Escaping the Prison",
+    "Also try Infiltrating the Airship",
+    "Also try Cave Story",
+    "Also try Backrooms",
+    "Also try Cookie Clicker",
+    "Also try Crossy Road",
+    "Also try Pac-Man",
+    "Also try Pac-Man Google",
+    "Also try Tomb of the Mask",
+    "Also try Basket Random",
+    "Also try 1v1.lol",
+    "Also try Monkey Mart",
+    "Also try Dinosaur Game",
+    "Also try Curveball",
+    "Also try FNAF",
+    "Also try Sonic 1",
+    "Also try Sonic 2",
+    "Also try Sonic 2 Community's Cut",
+    "Also try Baldi's Basics",
+    "Also try Kindergarden",
+    "Also try Windows 96",
+    "Also try Bad Time Simulator",
+    "Also try HRUNKER",
+    "Also try Temple Run 2",,
+    "Credit to all the creators of the games",
+    "New games every 5 months",
+    "More than 50 games",
+    "",
+      ];
+
+
+      var randomIndex = Math.floor(Math.random() * phrases.length);
+      var randomPhrase = phrases[randomIndex];
+
+
+      var phraseElement = document.getElementById("randomPhrase");
+      phraseElement.textContent = randomPhrase;
+    });
+  </script>
+  <h3 style="text-align: center;font: 115px Tahoma, sans-serif;"></h3>
+ <style>
+        button {
+            padding: 12px 10px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        button:active {
+            background-color: #004494;
+            transform: translateY(0);
+        }
+ </style>
+  <button onclick="openGame(0)">Pixel</button>
+  <button onclick="openGame(1)">Retro Bowl</button>
+  <button onclick="openGame(2)">Sonic Robot Blast 2</button>
+  <button onclick="openGame(3)">Super Mario 64</button>
+  <button onclick="openGame(4)">Eggy Car</button>
+  <button onclick="openGame(5)">Slope</button>
+  <button onclick="openGame(6)">Snowball.io</button>
+  <button onclick="openGame(7)">Paper.io 2</button>
+  <button onclick="openGame(8)">Pizza Tower</button>
+  <button onclick="openGame(9)">Final Earth 2</button>
+  <button onclick="openGame(10)">Tiny Fishing</button>
+  <button onclick="openGame(11)">OvO</button>
+  <button onclick="openGame(12)">Moto X3M</button>
+  <button onclick="openGame(13)">Subway Surfers</button>
+  <button onclick="openGame(14)">Time Shooter 3</button>
+  <button onclick="openGame(15)">Time Shooter 2</button>
+  <button onclick="openGame(16)">Sonic 3 AIR</button>
+  <button onclick="openGame(17)">Sonic 4 Episode 1</button>
+  <button onclick="openGame(18)">Minecraft 1.8</button>
+  <button onclick="openGame(19)">Project Laser</button>
+  <button onclick="openGame(20)">Stock Trading Game</button>
+  <button onclick="openGame(21)">Sonic Mania Plus</button>
+  <button onclick="openGame(22)">Super Smash Flash 2</button>
+  <button onclick="openGame(23)">RedBall4 Vol 1</button>
+  <button onclick="openGame(24)">RedBall4 Vol 2</button>
+  <button onclick="openGame(25)">RedBall4 Vol 3</button>
+  <button onclick="openGame(26)">Fleeing the Complex</button>
+  <button onclick="openGame(27)">Sonic Worlds Next Eng</button>
+  <button onclick="openGame(28)">Fruit Slices</button>
+  <button onclick="openGame(29)">Bloxorz</button>
+  <button onclick="openGame(30)">Super Mario Bros</button>
+  <button onclick="openGame(31)">Unfair Undyne</button>
+  <button onclick="openGame(32)">Super Mario 63</button>
+  <button onclick="openGame(33)">Cat Mario</button>
+  <button onclick="openGame(34)">Cut the Rope</button>
+  <button onclick="openGame(35)">Plants vs Zombies</button>
+  <button onclick="openGame(36)">TrollFace Quest</button>
+  <button onclick="openGame(37)">TrollFace Quest 3</button>
+  <button onclick="openGame(38)">TrollFace Quest 4</button>
+  <button onclick="openGame(39)">TrollFace Quest 5</button>
+  <button onclick="openGame(40)">TrollFace Quest 13</button>
+  <button onclick="openGame(41)">Nyan Cat</button>
+  <button onclick="openGame(42)">Escaping the Prison</button>
+  <button onclick="openGame(43)">Infiltrating the Airship</button>
+  <button onclick="openGame(44)">Cave Story</button>
+  <button onclick="openGame(45)">Backrooms</button>
+  <button onclick="openGame(46)">Cookie Clicker</button>
+  <button onclick="openGame(47)">Crossy Road</button>
+  <button onclick="openGame(48)">Pac-Man</button>
+  <button onclick="openGame(49)">Pac-Man Google</button>
+  <button onclick="openGame(50)">Tomb of the Mask</button>
+  <button onclick="openGame(51)">Basket Random</button>
+  <button onclick="openGame(52)">1v1.lol</button>
+  <button onclick="openGame(53)">Monkey Mart</button>
+  <button onclick="openGame(54)">Dinosaur Game</button>
+  <button onclick="openGame(55)">Curveball</button>
+  <button onclick="openGame(56)">FNAF</button>
+  <button onclick="openGame(57)">Sonic 1</button>
+  <button onclick="openGame(58)">Sonic CD</button>
+  <button onclick="openGame(59)">Sonic 2</button>
+  <button onclick="openGame(60)">Sonic 2 Community’s Cut</button>
+  <button onclick="openGame(61)">Baldi's Basics</button>
+  <button onclick="openGame(62)">Kindergarten</button>
+  <button onclick="openGame(63)">Windows 96</button>
+  <button onclick="openGame(64)">Bad Time Simulator</button>
+  <button onclick="openGame(65)">HRUNKER</button>
+  <button onclick="openGame(66)">Temple Run 2</button>
+        <script>
+                function openGame(link) {
+      switch(link) {
+      case 0:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/pixel-shooter/ps.xml&container=ig";
+      break;
+      
+      case 1:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/rtbl.xml&container=ig";
+      break;
+      
+      case 2:
+      url = "https://html.cafe/xf6a4fe1e";
+      break;
+      
+      case 3:
+      url = "https://html.cafe/xe25ca14a";
+      break;
+      
+      case 4:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/eggy-car/ec.xml&container=ig"
+      break;
+      
+      case 5:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/WebStarterkit@ebc61d8a952e7630c8c5ca3410335bf5d5f04711/src/sp.xml&container=ig";
+      break;
+      
+      case 6:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/SQLite4Unity3d@8516fc0bd1d2be662ca484f5dc506268b24763ef/Example/Assets/snowball.xml&container=ig";
+      break;
+      
+      case 7:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@b8b8a03997f38305098c2f2f5fe14907463cd23b/build/ppo2/ppo2.xml&container=ig";
+      break;
+      
+      case 8:
+      url = "https://html.cafe/xf93726b3";
+      break;
+      
+      case 9:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://529473016-184630684593625815.preview.editmysite.com/uploads/b/139890129-811652923688457694/files/tfe2.xml&container=ig";
+      break;
+      
+      case 10:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://72682389-756457502729861133.preview.editmysite.com/uploads/b/11886820-896015480911618794/files/tf.xml&container=ig";
+      break;
+      
+      case 11:
+      url = "https://75jfh73gd9hla64g-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml&container=ig";
+      break;
+      
+      case 12:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@99563e3bf6eb25323e3bd5af20dcd9a261b97991/build/m3m/m3m.xml&container=ig";
+      break;
+      
+      case 13:
+      url = "https://a6936-19375562.cluster7.canvas-user-content.com/courses/6936~1010708/files/6936~19375562/course%20files/vfcd/index.html";
+      break;
+      
+      case 14:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@0d8fb9c7430567ed0900902593eee6ba2ba8d297/ts3.xml&container=ig";
+      break;
+      
+      case 15:
+      url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/element@1dd0b99d2004b84795f2745a5eb3468deb1c38a4/ts2.xml&container=ig";
+      break;
+      
+      case 16:
+          url = "https://html.cafe/xa901148d";
+          break;
+          
+      case 17:
+      url = "https://html.cafe/x968baaca";
+      break;
+          
+      case 18:
+      url = "https://html.cafe/xb1d0df98";
+      break;
+        
+      case 19:
+      url = "https://html.cafe/x0805370a";
+      break;
+          
+      case 20:
+      url = "https://www.bloomberg.com/features/2015-stock-chart-trading-game";
+      break;
+          
+      case 21:
+      url = "https://html.cafe/xe6d354a3";
+      break;
+
+
+      case 22:
+      url = "https://www-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/f107b843-3661-4036-9397-2b0c6414a369%2Fssf2v0.8.xml&container=ig";
+      break;
+
+
+      case 23:
+      url = "https://rb44a.github.io/RedBall_V1/";
+      break;
+
+
+      case 24:
+      url = "https://rb44a.github.io/RedBall_V2/";
+      break;
+
+
+      case 25:
+      url = "https://rb44a.github.io/RedBall_V3/";
+      break;
+
+
+      case 26:
+      url = "https://html.cafe/x6377041f";
+      break;
+
+
+      case 27:
+      url = "https://html.cafe/xb09d02a3";
+      break;
+
+
+      case 28:
+      url = "https://juegospot.com/gamez/fruit-slice/index.html";
+      break;
+
+
+      case 29:
+      url = "https://bloxorz.org/g/41";
+      break;
+
+
+      case 30:
+      url = "https://playmario.github.io/HTML5_Client/";
+      break;
+
+
+      case 31:
+      url = "https://doodle-pile.gitlab.io/unfair-undyne/v0.99/";
+      break;
+      
+      case 32:
+      url = "https://html.cafe/xf9909e2f";
+      break;
+
+
+      case 33:
+      url = "https://html.cafe/xcb226471";
+      break;
+
+
+      case 34:
+      url = "https://html.cafe/x7975eb3b";
+      break;
+
+
+      case 35:
+      url = "https://html.cafe/xdcb9bccb";
+      break;
+
+
+      case 36:
+      url = "https://html.cafe/x6a352f46";
+      break;
+
+
+      case 37:
+      url = "https://html.cafe/x8bf0bc74";
+      break;
+
+
+      case 38:
+      url = "https://html.cafe/x9e29e6f6";
+      break;
+
+
+      case 39:
+      url = "https://html.cafe/xe6b234f1";
+      break;
+
+
+      case 40:
+      url = "https://html.cafe/x58e0f9ec";
+      break;
+
+
+      case 41:
+      url = "https://html.cafe/x5220e332";
+      break;
+
+
+      case 42:
+      url = "https://html.cafe/x6294c316";
+      break;
+
+
+      case 43:
+      url = "https://html.cafe/xb3460347";
+      break;
+
+
+      case 44:
+      url = "https://vinmannie.github.io/CaveStory/";
+      break;
+
+
+      case 45:
+      url = "https://html.cafe/xcc631050";
+      break;
+
+
+      case 46:
+      url = "https://html.cafe/xb21b32f7";
+      break;
+
+
+      case 47:
+      url = "https://html.cafe/x431c714e";
+      break;
+
+
+      case 48:
+      url = "https://html.cafe/xb2d3f99e";
+      break;
+
+
+      case 49:
+      url = "https://html.cafe/xafea919a";
+      break;
+
+
+      case 50:
+      url = "https://html.cafe/xbee2f08d";
+      break;
+
+
+      case 51:
+      url = "https://html.cafe/xa4301809";
+      break;
+
+
+      case 52:
+      url = "https://one-opensocial.googleusercontent.com/gadgets/ifr?url=https://classroom6x.b-cdn.net/1/one.xml&container=ig";
+      break;
+
+
+      case 53:
+      url = "https://html.cafe/x33bca0fb";
+      break;
+
+
+      case 54:
+      url = "https://html.cafe/x90ef8e33";
+      break;
+
+
+      case 55:
+      url = "https://ezh5.com/g/curveball";
+      break;
+
+
+      case 56:
+      url = "https://html.cafe/x995c57e4";
+      break;
+
+
+      case 57:
+      url = "https://html.cafe/x045eeea8";
+      break;
+
+
+      case 58:
+      url = "https://html.cafe/x0f9f0b91";
+      break;
+
+
+      case 59:
+      url = "https://html.cafe/xdd7fa96a";
+      break;
+
+
+      case 60:
+      url = "https://html.cafe/x01aaa67d";
+      break;
+
+
+      case 61:
+      url = "https://html.cafe/x8d4a0866";
+      break;
+
+
+      case 62:
+      url = "https://html.cafe/x1c5fbaf9";
+      break;
+
+
+      case 63:
+      url = "https://html.cafe/x91d361fc";
+      break;
+
+
+      case 64:
+      url = "https://html.cafe/x82599f2b";
+      break;
+
+
+      case 65:
+      url = "https://html.cafe/x68408862";
+      break;
+      
+      case 66:
+      url = "https://roblox-unblock.github.io/r8/temple-run-2/";
+      break;
+      }
+      
+var win = window.open();
+
+
+var iframe = win.document.createElement('iframe');
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+win.document.body.style.margin = '0';
+win.document.body.style.height = '100vh';
+iframe.style.margin = '0';
+iframe.src = url;
+win.document.body.appendChild(iframe);
+}
+        </script>
+   </body></html>
