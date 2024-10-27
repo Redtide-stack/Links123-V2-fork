@@ -1,0 +1,89 @@
+<html><head><style>
+body {
+  background-image: url('https://img3.wallspic.com/crops/1/9/2/8/2/128291/128291-pc_game-sky-explosion-minecraft-sunlight-1920x1080.jpg');
+background-repeat: no-repeat;
+  background-size: 100%
+  }
+  </style>
+
+
+  </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif;">Games Page 2</h1>
+   <style>
+    #randomPhrase {
+      position: absolute;
+      bottom: px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <div id="randomPhrase"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // some random text when u open the site 
+    var phrases = [
+    "Under construction",
+    "Fuera negro",
+    "There is nothing here",
+    "Turn back",
+    "Just go to page 1",
+    "LEAVE NOW!",
+      ];
+
+
+      var randomIndex = Math.floor(Math.random() * phrases.length);
+      var randomPhrase = phrases[randomIndex];
+
+
+      var phraseElement = document.getElementById("randomPhrase");
+      phraseElement.textContent = randomPhrase;
+    });
+  </script>
+  <h3 style="text-align: center;font: 115px Tahoma, sans-serif;"></h3>
+ <style>
+        button {
+            padding: 12px 10px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: alex;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        button:active {
+            background-color: #004494;
+            transform: translateY(0);
+        }
+ </style>
+  <button onclick="openGame(0)">DO NO ENTER</button>
+        <script>
+                function openGame(link) {
+      switch(link) {
+      case 0:
+      url = "https://html.cafe/xa0b1cbdc";
+      break;
+      }
+      
+var win = window.open();
+
+
+var iframe = win.document.createElement('iframe');
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+win.document.body.style.margin = '0';
+win.document.body.style.height = '100vh';
+iframe.style.margin = '0';
+iframe.src = url;
+win.document.body.appendChild(iframe);
+}
+        </script>
+   </body></html>
