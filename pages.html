@@ -23,16 +23,10 @@ background-repeat: no-repeat;
   <div id="randomPhrase"></div>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-    // some random text when u open the site 
     var phrases = [
-    "This is very empty",
     "Everyone uses Art Class",
-    "Nobody uses Internet Archive",
     "Lo mejor del El Chavo is no longer in the Videos section",
     "",
-    "I have no more texts to show here",
-    
-    
       ];
 
 
@@ -47,11 +41,12 @@ background-repeat: no-repeat;
   <h3 style="text-align: center;font: 115px Tahoma, sans-serif;"></h3>
  <style>
         button {
-            padding: 12px 10px;
-            font-size: 18px;
+            padding: 20px 30px;
+            font-size: 30px;
             background-color: #007bff;
             color: #fff;
-            border: none;
+            border: alex;
+            width: 100%;
             border-radius: 6px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
@@ -65,24 +60,19 @@ background-repeat: no-repeat;
             transform: translateY(0);
         }
  </style>
-  <button onclick="openGame(0)">Internet Archive</button>
-  <button onclick="openGame(1)">Art Class</button>
-  <button onclick="openGame(2)">Lo mejor del Chavo del 8</button>
+  <button onclick="openGame(0)">Art Class</button>
+  <button onclick="openGame(1)">Lo mejor del Chavo del 8</button>
 
 
         <script>
                 function openGame(link) {
       switch(link) {
       case 0:
-      url = "https://html.cafe/x04a5dfac";
-      break;
-
-      case 1:
       url = "https://html.cafe/x1b93b7ce";
       break;
 
 
-      case 2:
+      case 1:
       url = "https://html.cafe/x733d2e3d";
       break;
 
