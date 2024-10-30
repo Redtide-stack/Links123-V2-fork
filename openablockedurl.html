@@ -1,0 +1,122 @@
+<html><head><style>
+body {
+  background-image: url('https://img3.wallspic.com/crops/1/9/2/8/2/128291/128291-pc_game-sky-explosion-minecraft-sunlight-1920x1080.jpg');
+background-repeat: no-repeat;
+  background-size: 100%
+  }
+  </style>
+
+  </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif;">Open a Blocked URL</h1>
+   <style>
+    #randomPhrase {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <div id="randomPhrase"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var phrases = [
+    "Note: Some game pages and Google Sites cannot be projected ",
+    "Note: Some game pages and Google Sites cannot be projected ",
+    "Note: Some game pages and Google Sites cannot be projected ",
+    "Note: Some game pages and Google Sites cannot be projected ",
+    "Note: Some game pages and Google Sites cannot be projected ",
+    "Note: Some game pages and Google Sites cannot be projected ",
+    "Note: Some game pages and Google Sites cannot be projected ",
+    "Note: Some game pages and Google Sites cannot be projected ",
+    "Note: Eres Negro",
+      ];
+
+      var randomIndex = Math.floor(Math.random() * phrases.length);
+      var randomPhrase = phrases[randomIndex];
+
+      var phraseElement = document.getElementById("randomPhrase");
+      phraseElement.textContent = randomPhrase;
+    });
+  </script>
+  <h3 style="text-align: center;font: 115px Tahoma, sans-serif;"></h3>
+   <style>
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        input[type="text"] {
+            padding: 12px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            width: 50%;
+            box-sizing: border-box;
+            outline: none;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        button:active {
+            background-color: #004494;
+            transform: translateY(0);
+        }
+  </style>
+  <h1 style="font: 40px Tahoma, sans-serif;"></h1>
+<style>
+  p1 {
+   color: black;
+   font: 50px Helvetica, sans-serif;
+  }
+  </style>
+
+  <h1 style="text-align: center" ></h>
+    <p1 style="text-align: center" >Title:</p1>
+    <br>
+  <input type="text" id="tabTitle">
+  <br>
+  <br>
+  <p1>URL:</p1>
+  <br>
+  <input type="text" id="theUrl">
+  <br>
+	<button onclick="openGame()">Open URL</button>
+	<script>
+		function openGame(randomTrue) {
+          var tt = document.getElementById("tabTitle").value;
+var win = window.open();
+var url = document.getElementById("theUrl").value;
+var iframe = win.document.createElement('iframe');
+win.document.body.style.margin = '0';
+win.document.body.style.height = '100vh';
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = 0;
+if (url.includes("http") == true) {
+  iframe.src = url;
+} else {
+iframe.src = "https://" + url;
+}
+if (tt) {
+  win.document.title = tt;
+          }
+win.document.body.appendChild(iframe);
+}
+	</script>
+</html>
+
