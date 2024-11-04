@@ -6,7 +6,7 @@ background-repeat: no-repeat;
   }
   </style>
 
-  </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif;">Open a Blocked URL</h1>
+  </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif;">Add custom game</h1>
    <style>
     #randomPhrase {
       position: absolute;
@@ -22,15 +22,16 @@ background-repeat: no-repeat;
   <script>
     document.addEventListener("DOMContentLoaded", function() {
     var phrases = [
-    "Note: Some game pages and Google Sites cannot be projected ",
-    "Note: Some game pages and Google Sites cannot be projected ",
-    "Note: Some game pages and Google Sites cannot be projected ",
-    "Note: Some game pages and Google Sites cannot be projected ",
-    "Note: Some game pages and Google Sites cannot be projected ",
-    "Note: Some game pages and Google Sites cannot be projected ",
-    "Note: Some game pages and Google Sites cannot be projected ",
-    "Note: Some game pages and Google Sites cannot be projected ",
+    "Note: Some games and Google Sites cannot be projected ",
+    "Note: Some games and Google Sites cannot be projected ",
+    "Note: Some games and Google Sites cannot be projected ",
+    "Note: Some games and Google Sites cannot be projected ",
+    "Note: Some games and Google Sites cannot be projected ",
+    "Note: Some games and Google Sites cannot be projected ",
+    "Note: Some games and Google Sites cannot be projected ",
+    "Note: Some games and Google Sites cannot be projected ",
     "Note: Eres Negro",
+    "",
       ];
 
       var randomIndex = Math.floor(Math.random() * phrases.length);
@@ -95,7 +96,7 @@ background-repeat: no-repeat;
   <br>
   <input type="text" id="theUrl">
   <br>
-	<button onclick="openGame()">Open URL</button>
+	<button onclick="openGame()">Create</button>
 	<script>
 		function openGame(randomTrue) {
           var tt = document.getElementById("tabTitle").value;
@@ -119,4 +120,3 @@ win.document.body.appendChild(iframe);
 }
 	</script>
 </html>
-
