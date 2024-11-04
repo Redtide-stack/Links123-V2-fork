@@ -24,7 +24,6 @@ background-repeat: no-repeat;
     var phrases = [
     "More dinero",
     "Moooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooore",
-    "Check out the previews at Links123 preview",
     "Create",
     "",
       ];
@@ -58,17 +57,12 @@ background-repeat: no-repeat;
             transform: translateY(0);
         }
  </style>
-  <button onclic="openGame(0)">Links123 Preview (closed)</button>
-  <button onclick="openGame(1)">Create custom game</button>
+  <button onclick="openGame(0)">Create custom game</button>
 
 	<script>
 		function openGame(link) {
       switch(link) {
       case 0:
-      url = "";
-      break;
-      
-      case 1:
       url = "https://ricardomariosonic123.github.io/links123/createcustomgame.html";
       break;
       }
