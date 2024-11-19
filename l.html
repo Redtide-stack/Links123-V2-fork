@@ -1,4 +1,55 @@
-<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+      background-size: 100%;
+  background-image: url('https://img3.wallspic.com/crops/1/9/2/8/2/128291/128291-pc_game-sky-explosion-minecraft-sunlight-1920x1080.jpg');
+  background-repeat: no-repeat;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+        }
+
+        #main-content {
+            display: none; /* Hide main content initially */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="splash-screen">
+        <h1>Loading Links123 Portal...</h1>
+      <br>
+    </div>
+
+    <div id="">
+        <h2></h2>
+        <p></p>
+    </div>
+
+    <script>
+        // Function to hide the splash screen and show the main content
+        function hideSplashScreen() {
+            const splashScreen = document.getElementById('splash-screen');
+            const mainContent = document.getElementById('main-content');
+
+            splashScreen.style.opacity = '0';
+            setTimeout(() => {
+                splashScreen.style.display = 'none';
+                mainContent.style.display = 'block';
+            }, 500); // Match the duration of the CSS transition
+        }
+        setTimeout(hideSplashScreen, 4000);
+    </script>
 <title>Links123 Portal</title>
 <head><style>
 body {
@@ -8,7 +59,7 @@ background-repeat: no-repeat;
   }
   </style>
 
-  </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif;">Links123 Portal</h1>
+  </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif;">Welcome to Links123 Portal</h1>
    <style>
     #randomPhrase {
       position: absolute;
@@ -26,12 +77,15 @@ background-repeat: no-repeat;
     var phrases = [
     "Launcher?",
     "Dinero?",
-    "Links123 Portal. Managed by Ricardo",
-    "Links123. Managed by Ricardo",
-    "Links123. Managed by SuperBruce12",
-    "Links123 Portal. Managed by SuperBruce12",
-    "This is unnecessary but I did it anyway.",
+    "Meme of the day!",
+    "Do not share!",
+    "Links123 Portal Google Docs and Links123 V1 is dead",
+    "Links123 Portal is a launcher",
+    "It's not really loading",
     "If you don't want to read press Launch",
+    "Why not?",
+    "If you read this you are negro",
+    ""
       ];
 
       var randomIndex = Math.floor(Math.random() * phrases.length);
@@ -62,7 +116,7 @@ background-repeat: no-repeat;
         button {
             padding: 12px 25px;
             font-size: 18px;
-            background-color: #007bff;
+            background-color: #26c703;
             color: #fff;
             border: alex;
             border-radius: 6px;
@@ -70,30 +124,34 @@ background-repeat: no-repeat;
             transition: background-color 0.3s, transform 0.2s;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #1b8a03;
             transform: translateY(-2px);
         }
         button:active {
-            background-color: #004494;
+            background-color: #27591c;
             transform: translateY(0);
         }
  </style>
 	</script>
-<h1 style="text-align: ; font: 40px Tahoma, sans-serif;">Links123 V2.3.3</h1>
-<h1 style="alex">20 games were added, some games were replaced by others, Links123 Portal was created.</h1>
+<h1 style="text-align: ; font: 40px Tahoma, sans-serif;">Update 2.3.4</h1>
+<h1 style="alex">0 games, 0 emulators, 0 apps, just a cinematic that nobody asked for. But in Links123 Portal the interface was improved and the other section was added.</h1>
 <h1 style="text-align: center" ></h>
     <br>
     <br>
     <br>
     <br>
     <br>
-<button onclick="openGame(0)">Launch Links123</button>
+<button onclick="openGame(0)"style="text-align: ; font: 30px Tahoma, sans-serif;">Launch Links123</button> <button onclick="openGame(1)"style="text-align: ; font: 30px Tahoma, sans-serif;">Others</button>
       	<script>
 		function openGame(link) {
       switch(link) {
       case 0:
       url = "https://ricardomariosonic123.github.io/Links123/h.html";
       break;
+         
+      case 1:
+      url = "https://ricardomariosonic123.github.io/Links123/o.html";
+      break;    
       }
       
 var win = window.open();
