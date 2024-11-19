@@ -1,3 +1,55 @@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        background-size: 100%;
+  background-image: url('https://wallpapers-clan.com/wp-content/uploads/2024/05/minecraft-world-scenery-desktop-wallpaper-preview.jpg');
+  background-repeat: no-repeat;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+        }
+
+        #main-content {
+            display: none; /* Hide main content initially */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="splash-screen">
+        <h1>Loading Links123...</h1>
+      <br>
+    </div>
+
+    <div id="">
+        <h2></h2>
+        <p></p>
+    </div>
+
+    <script>
+        // Function to hide the splash screen and show the main content
+        function hideSplashScreen() {
+            const splashScreen = document.getElementById('splash-screen');
+            const mainContent = document.getElementById('main-content');
+
+            splashScreen.style.opacity = '0';
+            setTimeout(() => {
+                splashScreen.style.display = 'none';
+                mainContent.style.display = 'block';
+            }, 500); // Match the duration of the CSS transition
+        }
+        setTimeout(hideSplashScreen, 4000);
+    </script>
 <html>
 <title>Links123</title>
 <head><style>
@@ -25,6 +77,7 @@ background-repeat: no-repeat;
     document.addEventListener("DOMContentLoaded", function() {
     var phrases = [
     "Dónde está mi dinero Mr Marmur?",
+    "It's not really loading",
     "HTML.cafe is blocked",
     "-0",
     "ERROR CODE: S3KN2IL1",
@@ -87,8 +140,8 @@ background-repeat: no-repeat;
     "Quiero tocar tu culo",
     "Nyah~",
     "Dónde está mi dinero Alex?",
-    "Donde esta el meme of the day?",
-    "tu dinero es de telemundo",
+    "Donde esta the meme of the day?",
+    "Tu dinero es de telemundo",
       ];
 
       var randomIndex = Math.floor(Math.random() * phrases.length);
@@ -159,5 +212,5 @@ win.document.body.appendChild(iframe);
 }
 	</script>
   <h1 style="text-align: center; font: 70px Tahoma, sans-serif;"></h1>
-  <h1 style="text-align: center; font: 20px Tahoma, sans-serif;">V2.3.3</h1>
+  <h1 style="text-align: center; font: 20px Tahoma, sans-serif;">V2.3.4</h1>
    </body></html>
