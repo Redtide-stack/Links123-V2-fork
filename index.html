@@ -1,6 +1,58 @@
 <html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    #randomPhrase {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+     color: white;
+     font-size: 30px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <div id="randomPhrase"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var phrases = [
+    "ERROR CODE: 123",
+    "ERROR CODE: -0",
+    "Enter the password",
+    "ERROR CODE: +0",
+    "GoGuardian blocked this page",
+    "👁",
+    "ERROR CODE: UNKNOWN",
+    "ERROR CODE: DINERO",
+    "ERROR CODE: MONEDAS",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+    "ERROR CODE: S3KN2IL1",
+      ];
+
+      var randomIndex = Math.floor(Math.random() * phrases.length);
+      var randomPhrase = phrases[randomIndex];
+
+      var phraseElement = document.getElementById("randomPhrase");
+      phraseElement.textContent = randomPhrase;
+    });
+  </script>
     <title>Error</title>
     <style>
         body {
@@ -26,13 +78,13 @@ background-repeat: no-repeat;
         h1 {
             margin-bottom: 20px;
             font-size: 30px;
-            color: #fff;
+            color: red;
         }
 
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Error Code: S3KN2IL1</h1>
+        <h1>Easter Egg</h1>
     </div>
 </body></html>
