@@ -24,10 +24,12 @@ background-repeat: no-repeat;
   <script>
     document.addEventListener("DOMContentLoaded", function() {
     var phrases = [
-    "",
+    "The games don't belong to me",
     "Credit to all the creators of the games",
     "New games every 10 months",
-    "More than 100 games",
+    "More than 100 games!",
+    "Muchos Juegos!",
+    "",
       ];
 
 
@@ -63,6 +65,7 @@ background-repeat: no-repeat;
  </style>
   <button onclick="openGame(0)">Page 1</button>
   <button onclick="openGame(1)">Page 2</button>
+  <button onclick="openGame(2)">Page 3 (Coming Soon)</button>
         <script>
                 function openGame(link) {
       switch(link) {
@@ -73,6 +76,10 @@ background-repeat: no-repeat;
       case 1:
       url = "https://ricardomariosonic123.github.io/Links123/g2.html";
       break;
+          
+      case 2:
+      url = "https://ricardomariosonic123.github.io/Links123/index.html";
+      break;    
       }
       
 var win = window.open();
