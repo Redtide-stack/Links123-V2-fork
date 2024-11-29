@@ -22,11 +22,11 @@ body {
   <script>
     document.addEventListener("DOMContentLoaded", function() {
     var phrases = [
-    "Also try Interstellar",
     "Rule 34 is now unblocked!",
-    "Also Try HTML.cafe",
-    "Also Try Obsidians Unblocked",
-    "",
+    "Also Try HTML.cafe Gallery",
+    "Does anyone use the Internet Archive?",
+    "Xvideos is now unblocked!",
+    "Twitter is now unblocked!",
       ];
       var randomIndex = Math.floor(Math.random() * phrases.length);
       var randomPhrase = phrases[randomIndex];
@@ -41,7 +41,7 @@ body {
             font-size: 30px;
             background-color: #007bff;
             color: #fff;
-            border: alex;
+            border: outset #444;
             width: 100%;
             border-radius: 6px;
             cursor: pointer;
@@ -49,29 +49,25 @@ body {
         }
         button:hover {
             background-color: #0056b3;
-            transform: translateY(-2px);
         }
         button:active {
             background-color: #004494;
             transform: translateY(0);
         }
  </style>
-  <button onclick="openGame(0)">Interstellar</button>
-  <button onclick="openGame(1)">HTML.cafe</button>
-  <button onclick="openGame(2)">Obsidians Unblocked</button>
+  <button onclick="openGame(0)">HTML.cafe Gallery</button>
+  <button onclick="openGame(1)">Internet Archive</button>
         <script>
                 function openGame(link) {
       switch(link) {
+
       case 0:
-      url = "https://my-developer-portfolio.pages.dev/games";
-      break;
-      case 1:
       url = "https://html.cafe/gallery";
       break; 
-          
-      case 2:
-      url = "https://obsidianig.com";
-      break;     
+
+      case 1:
+      url = "https://html.cafe/x04a5dfac";
+      break;        
       }
       
 var win = window.open();
