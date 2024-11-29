@@ -5,12 +5,10 @@ body {
   }
   </style>
 
-
-  </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif; color: white;">Apps</h1>
+  </head><body><h1 style="text-align: center; font: 70px Tahoma, sans-serif; color: white;">Custom Game</h1>
    <style>
     #randomPhrase {
       position: absolute;
-      bottom: px;
       left: 50%;
       transform: translateX(-50%);
       font-weight: bold;
@@ -25,31 +23,51 @@ body {
   <script>
     document.addEventListener("DOMContentLoaded", function() {
     var phrases = [
-    "Also try Interstellar",
-    "Rule 34 is now unblocked!",
-    "Also Try HTML.cafe",
-    "Also Try Obsidians Unblocked",
+    "Note: Some game websites block the connection and cannot be projected",
+    "Note: Some game websites block the connection and cannot be projected",
+    "Note: Some game websites block the connection and cannot be projected",
+    "Note: Some game websites block the connection and cannot be projected",
+    "Note: Some game websites block the connection and cannot be projected",
+    "Note: Some game websites block the connection and cannot be projected",
+    "Note: Some game websites block the connection and cannot be projected",
+    "Note: Some game websites block the connection and cannot be projected",
+    "Note: Donde esta mi dinero?",
+    "Note: Create!",
+    "Note: Eres Negro",
     "",
       ];
 
-
       var randomIndex = Math.floor(Math.random() * phrases.length);
       var randomPhrase = phrases[randomIndex];
-
 
       var phraseElement = document.getElementById("randomPhrase");
       phraseElement.textContent = randomPhrase;
     });
   </script>
   <h3 style="text-align: center;font: 115px Tahoma, sans-serif;"></h3>
- <style>
+   <style>
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        input[type="text"] {
+            padding: 12px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            width: 50%;
+            box-sizing: border-box;
+            outline: none;
+        }
         button {
-            padding: 20px 30px;
-            font-size: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
             background-color: #007bff;
             color: #fff;
             border: alex;
-            width: 100%;
             border-radius: 6px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
@@ -62,39 +80,47 @@ body {
             background-color: #004494;
             transform: translateY(0);
         }
- </style>
-  <button onclick="openGame(0)">Interstellar</button>
-  <button onclick="openGame(1)">HTML.cafe</button>
-  <button onclick="openGame(2)">Obsidians Unblocked</button>
+  </style>
+  <h1 style="font: 40px Tahoma, sans-serif;"></h1>
+<style>
+  p1 {
+   color: black;
+   font: 50px Helvetica, sans-serif;
+  }
+  </style>
 
-        <script>
-                function openGame(link) {
-      switch(link) {
-      case 0:
-      url = "https://my-developer-portfolio.pages.dev/games";
-      break;
-
-      case 1:
-      url = "https://html.cafe/gallery";
-      break; 
-          
-      case 2:
-      url = "https://obsidianig.com";
-      break;     
-      }
-      
+  <h1 style="text-align: center" ></h>
+    <p1  style="text-align: center; color: white;" >Title:</p1>
+    <br>
+  <input type="text" id="tabTitle">
+  <br>
+  <br>
+  <p1 style="text-align: center; color: white;">URL:</p1>
+  <br>
+  <input type="text" id="theUrl">
+  <br>
+    <br>
+	<button onclick="openGame()"style="text-align: ; font: 30px Tahoma, sans-serif;">Open in about:blank</button>
+	<script>
+		function openGame(randomTrue) {
+          var tt = document.getElementById("tabTitle").value;
 var win = window.open();
-
-
+var url = document.getElementById("theUrl").value;
 var iframe = win.document.createElement('iframe');
-iframe.style.width = "100%";
-iframe.style.height = "100%";
-iframe.style.border = "none";
 win.document.body.style.margin = '0';
 win.document.body.style.height = '100vh';
-iframe.style.margin = '0';
-iframe.src = url;
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = 0;
+if (url.includes("http") == true) {
+  iframe.src = url;
+} else {
+iframe.src = "https://" + url;
+}
+if (tt) {
+  win.document.title = tt;
+          }
 win.document.body.appendChild(iframe);
 }
-        </script>
-   </body></html>
+	</script>
+</html>
