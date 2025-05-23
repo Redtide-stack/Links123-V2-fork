@@ -107,21 +107,21 @@ body {
           var tt = document.getElementById("tabTitle").value;
 var win = window.open();
 var url = document.getElementById("theUrl").value;
-var iframe = win.document.createElement('iframe');
+var embed = win.document.createElement('embed');
 win.document.body.style.margin = '0';
 win.document.body.style.height = '100vh';
-iframe.style.width = "100%";
-iframe.style.height = "100%";
-iframe.style.border = 0;
+embed.style.width = "100%";
+embed.style.height = "100%";
+embed.style.border = 0;
 if (url.includes("http") == true) {
-  iframe.src = url;
+  embed.src = url;
 } else {
-iframe.src = "https://" + url;
+embed.src = "https://" + url;
 }
 if (tt) {
   win.document.title = tt;
           }
-win.document.body.appendChild(iframe);
+win.document.body.appendChild(embed);
 }
 	</script>
 </html>
