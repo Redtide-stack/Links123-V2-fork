@@ -85,15 +85,15 @@ background-repeat: no-repeat;
 var win = window.open();
 
 
-var iframe = win.document.createElement('iframe');
-iframe.style.width = "100%";
-iframe.style.height = "100%";
-iframe.style.border = "none";
+var embed = win.document.createElement('embed');
+embed.style.width = "100%";
+embed.style.height = "100%";
+embed.style.border = "none";
 win.document.body.style.margin = '0';
 win.document.body.style.height = '100vh';
-iframe.style.margin = '0';
-iframe.src = url;
-win.document.body.appendChild(iframe);
+embed.style.margin = '0';
+embed.src = url;
+win.document.body.appendChild(embed);
 }
         </script>
    </body></html>
